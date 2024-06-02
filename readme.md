@@ -1,14 +1,19 @@
 # Fivem-Bridge-Decompiled
 
-This repository contains the decompiled code for Fivem-Bridge, a website available at [https://fivembridge.ir/](https://fivembridge.ir/).
+This repository contains the decompiled code for Fivem Bridge, a tool accessible via [https://fivembridge.ir/](https://fivembridge.ir/). Fivem Bridge is designed to bypass application block walls, providing users with enhanced access.
 
 ## Disclaimer
 
-I don't fight it, it's just for fun.
-I want to clarify that I am not the creator of this tool. I am simply exploring it out of curiosity. However, I really appreciate the work done by the creators, especially the fact that they have an API and do not store user information.
+This repository is created purely for educational and exploratory purposes. I am not the original creator of Fivem Bridge and I hold no responsibility for its security or functionality. My aim is to understand and learn from the tool's workings. I appreciate the effort by the original developers, especially their implementation of an API and the decision not to store user information.
 
 ## Purpose of this Repository
 
-The main reason for creating this repository is to understand why the creators initially attempted to remove the host file and create a new one. I believe it would be better to edit and add addresses at the end of the host file, rather than removing them. This way, users who have already made modifications to the host file for other applications or to block/re-route certain content won't be affected.
+The primary objective of this repository is to analyze and comprehend the logic behind Fivem Bridge, particularly focusing on its approach to handling the host file. There are key areas where improvements can be made:
 
-Feel free to explore the code.
+1. **Host File Management**: The original tool removes the existing host file and creates a new one. This can disrupt users who have customized their host files for other applications or content filtering. A better approach would be to append necessary addresses to the end of the existing host file, preserving user modifications.
+
+2. **Security Enhancements**: While the tool's current implementation is functional, there are potential enhancements to consider. For example, securing data handling processes to protect user privacy and prevent misuse.
+
+3. **Understanding and Improvement**: By sharing this decompiled code, I encourage others to delve into its logic and contribute suggestions for improvements, particularly focusing on security and efficiency.
+
+Feel free to explore the code and propose enhancements.
