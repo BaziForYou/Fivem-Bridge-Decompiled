@@ -59,6 +59,7 @@
 *.cab
 *.xar
 
+
 # Packing-only formats
 
 # Package management formats
@@ -254,3 +255,5 @@ $RECYCLE.BIN/
 
 
 .vscode/
+
+!Website Mirror/fivembridge.ir/download/FiveM_Bridge.zip
