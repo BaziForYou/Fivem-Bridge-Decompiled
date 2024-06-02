@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FiveM_Bridge.exe" version="1.2.1.6" publicKeyToken="4f25ac53bcbc90dc" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="bridgelogo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FiveM_Bridge" version="1.0.0.0" publicKeyToken="4F25AC53BCBC90DC" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FiveM_Bridge.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FiveM_Bridge.exe" size="841176">
+      <assemblyIdentity name="FiveM_Bridge" version="1.0.0.0" publicKeyToken="4F25AC53BCBC90DC" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>N49T7FWznF5KyUFDLdYPr3Cyhl7tyzdDzhpIj6nGtpw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bridgelogo.ico" size="165662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mdou3NM2E4qMo0GOY5R0a9OK3I0bsrWm/nHJHXjY2Tg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FiveM_Bridge.exe.config" size="179">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RiP47SxG4AFYnvpGJDOBgXVTrFBTrYkKBZpgtqUKw94=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\server.crt" size="1740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G4vte1uVlJgQdNdpnsQXB2g547k9QGB8JNpSmOMfUwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-HR5211O\U3F" issuerKeyHash="f8e83be283095314a10f6824d74e75e111904af9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7QY3s4ouCDhLZIi+8M/wDw9gfUd4p+aUu8wwaQC1RxM=</DigestValue></Reference></SignedInfo><SignatureValue>IJt/tvT39/gx51aXYFSa+nr4ACQtp3ZpnjdTCRxFMSLUP+rMlD7W2e9oq/wySGKkSbaYtjk/7m36maYtuajHIp0OGMZ/YF7gwzCYZWwyr5yk9Y6Q5MFd5r0T1cLvgg7cuyKKISuVueNMjUZ9i6NlCl/CpS4K6Yd2Xb4ULFoboa0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ol8tUf7VWXUfNhoEfBeeIGYVprY/5xbuojf/2QznThGNwNT5FaG0uolYumtLgsZyBY6JlB7o4Xz2e6y9VMavPNFe+sMuMAxsXwddf5qyFzNtIgUGKEHt7wVGV6M5Pzt3kxYw3nwwFOgvwRcr5N6I2SjA5819yu+OuWtMqR4TEIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1347b5006930ccbb94e6a778477d600f0ff0cff0be88644b38082e8ab33706ed" Description="" Url=""><as:assemblyIdentity name="FiveM_Bridge.exe" version="1.2.1.6" publicKeyToken="4f25ac53bcbc90dc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-HR5211O\U3F</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>nINMpnZlsQVC0YyDU8RP6CJHssbeREox/QAPU0V1UkQ=</DigestValue></Reference></SignedInfo><SignatureValue>iwVNTMBKo1pbqCDLAtenM60cIDV2/KSsF0WzJwap4qvJLogqi9UjE99Et4RelPnEw6ZJNK+HByG+QCfyPrys98sW7Do2LmC2dBZp2OGjqgz1VSX0Cc4+ujW84SO0z3PIyZ0tAKjrY0i7LADbVKmwIN7nMqfaWEOT/K/pVvaXHTg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ol8tUf7VWXUfNhoEfBeeIGYVprY/5xbuojf/2QznThGNwNT5FaG0uolYumtLgsZyBY6JlB7o4Xz2e6y9VMavPNFe+sMuMAxsXwddf5qyFzNtIgUGKEHt7wVGV6M5Pzt3kxYw3nwwFOgvwRcr5N6I2SjA5819yu+OuWtMqR4TEIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQZDSKWiO4rZtOLsHnIRWKxjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEgAUgA1ADIAMQAxAE8AXABVADMARjAeFw0yNDA0MDkwNTUxMzJaFw0yNTA0MDkxMTUxMzJaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ASABSADUAMgAxADEATwBcAFUAMwBGMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiXy1R/tVZdR82GgR8F54gZhWmtj/nFu6iN//ZDOdOEY3A1PkVobS6iVi6a0uCxnIFjomUHujhfPZ7rL1Uxq880V76wy4wDGxfB11/mrIXM20iBQYoQe3vBUZXozk/O3eTFjDefDAU6C/BFyvk3ojZKMDnzX3K7465a0ypHhMQiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFQjaHi+9ninKnMohQE/iFQV8TwxImGhZ+MdPt0dsky+jZHfRGDVpJrSnqMfbsfgT+lWx+LwVzVVJ5Oc0PTC04fIvzZVF4HlkipnN6zjukE6KveRoo9NAoxQJ3mfojy5LZTZSpI06cRANeu97QcILbL0YPgnwHk19j8ulF5FdAyr</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
